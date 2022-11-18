@@ -93,12 +93,20 @@ button {
     color: white;
 }
 
-.fa-brands:hover,
-h3>i:hover {
+.fa-brands:hover {
     background-color: green;
+    border-radius: 50%;
+}
+
+h3>i:hover {
+    background-color: rgb(8, 5, 5);
     border-radius: 50%;
 }
 
 button:hover {
     background-color: lightgreen;
+}
+
+h3 {
+    color: green;
 }
