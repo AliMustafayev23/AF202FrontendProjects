@@ -26,6 +26,7 @@ body {
 header {
     display: flex;
     background-color: #fff0ec;
+    z-index: 1;
 }
 
 .line {
