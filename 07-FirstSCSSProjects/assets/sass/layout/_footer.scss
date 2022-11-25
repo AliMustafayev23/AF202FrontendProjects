@@ -1,0 +1,32 @@
+.contactfooter {
+    margin-top: 40px;
+    background-color: black;
+    .end {
+        @include flexBox();
+        column-gap: 10px;
+        i {
+            margin-top: 20px;
+            color: white;
+            &:hover {
+                color: green;
+            }
+        }
+    }
+    .end2 {
+        @include flexBox();
+        column-gap: 5px;
+        color: white;
+        margin-top: 20px;
+        .tea {
+            color: $green;
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .contactfooter {
+        .end2 {
+            flex-direction: column;
+        }
+    }
+}

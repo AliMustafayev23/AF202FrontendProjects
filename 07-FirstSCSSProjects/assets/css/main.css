@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.contactus,
+.contactfooter,
+.page1,
+.page2,
+.page2header,
+.home {
+  margin-top: 50px;
+}
+
+body {
+  font-family: "Catamaran", sans-serif;
+}
+
+.page2body .card button, .page1 .left button, .contact .contactus .form button, .home .banner .bannerright button {
+  color: white;
+  border-style: none;
+  background-color: #678e3e;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+}
+.page2body .card button:hover, .page1 .left button:hover, .contact .contactus .form button:hover, .home .banner .bannerright button:hover {
+  background-color: lightgreen;
+}
+
+.home .banner {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .banner .bannerleft {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .banner .bannerleft img {
+  width: 400px;
+  height: 300px;
+  border: 3px solid #678e3e;
+  border-radius: 10%;
+}
+.home .banner .bannerright {
+  width: 50%;
+}
+.home .banner .bannerright h3 {
+  font-family: "Grand Hotel";
+  color: #678e3e;
+}
+.home .banner .bannerright p {
+  width: 400px;
+}
+@media only screen and (max-width: 992px) {
+  .home .banner {
+    flex-direction: column;
+  }
+  .home .banner .bannerright {
+    margin-top: 20px;
+  }
+}
+
+.header {
+  background-color: #f1f5f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.header .card:hover {
+  background-color: white;
+  border-bottom: 3px solid #678e3e;
+}
+.header .card .fa-solid {
+  color: #678e3e;
+}
+
+@media only screen and (max-width: 992px) {
+  .header {
+    flex-direction: column;
+  }
+}
+.contactfooter {
+  margin-top: 40px;
+  background-color: black;
+}
+.contactfooter .end {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+.contactfooter .end i {
+  margin-top: 20px;
+  color: white;
+}
+.contactfooter .end i:hover {
+  color: green;
+}
+.contactfooter .end2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5px;
+  color: white;
+  margin-top: 20px;
+}
+.contactfooter .end2 .tea {
+  color: #678e3e;
+}
+
+@media only screen and (max-width: 992px) {
+  .contactfooter .end2 {
+    flex-direction: column;
+  }
+}
+.contact {
+  background-color: #f1f5f8;
+}
+.contact .contactus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 100px;
+  background-color: #f1f5f8;
+}
+.contact .contactus .information {
+  margin-top: 40px;
+}
+.contact .contactus .information i:hover {
+  color: green;
+}
+.contact .contactus .form {
+  margin-top: 40px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+}
+.contact .contactus .form button {
+  width: 100%;
+  margin-top: 40px;
+}
+.contact .contactus .form input {
+  background-color: #f1f5f8;
+  border-radius: 5px;
+  width: 300px;
+}
+.contact .contactus .form #message {
+  height: 100px;
+}
+
+@media only screen and (max-width: 992px) {
+  .contact .contactus {
+    flex-direction: column;
+  }
+}
+.page1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  column-gap: 100px;
+}
+.page1 .left h3 {
+  color: #678e3e;
+  font-family: "Grand Hotel";
+}
+.page1 .left button {
+  margin-top: 10px;
+}
+.page1 .left p {
+  width: 400px;
+  flex-wrap: wrap;
+}
+.page1 .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: green;
+  column-gap: 20px;
+  font-family: "Grand Hotel";
+}
+.page1 .right .product img {
+  width: 200px;
+  height: 200px;
+}
+
+@media only screen and (max-width: 992px) {
+  .page1 {
+    flex-direction: column;
+  }
+  .page1 .right {
+    flex-direction: column;
+  }
+  .page1 .left p {
+    flex-wrap: wrap;
+  }
+}
+.page2body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page2body .card {
+  transition: width 2s, height 2s, transform 2s;
+  margin-left: 20px;
+  background-color: #f1f5f8;
+  text-align: center;
+  width: 200px;
+  border: 1px solid green;
+  border-style: hidden;
+  border-radius: 10%;
+}
+.page2body .card:hover {
+  width: 240px;
+}
+.page2body .card .iconbackground {
+  position: relative;
+  bottom: 20px;
+}
+.page2body .card .iconbackground .fa-solid {
+  background: rgb(0, 237, 0);
+  color: #678e3e;
+  border-radius: 50%;
+  padding: 8px;
+}
+.page2body .card .iconbackground .fa-solid:hover {
+  background: lightgreen;
+}
+.page2body .card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.page2body .card button {
+  margin-top: 10px;
+}
+
+.page2header h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Grand Hotel";
+  color: #678e3e;
+}
+.page2header h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 992px) {
+  .page2body {
+    flex-direction: column;
+  }
+  .page2body .card {
+    margin-top: 20px;
+  }
+}/*# sourceMappingURL=main.css.map */

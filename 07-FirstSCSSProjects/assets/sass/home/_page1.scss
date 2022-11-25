@@ -1,0 +1,45 @@
+.page1 {
+    @include flexBox();
+    margin-top: 40px;
+    column-gap: 100px;
+    .left {
+        h3 {
+            color: $green;
+            font-family: "Grand Hotel";
+        }
+        button {
+            margin-top: 10px;
+            @extend %primary-button;
+        }
+        p {
+            width: 400px;
+            flex-wrap: wrap;
+        }
+    }
+    .right {
+        @include flexBox();
+        color: green;
+        column-gap: 20px;
+        font-family: "Grand Hotel";
+        .product {
+            img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .page1 {
+        flex-direction: column;
+        .right {
+            flex-direction: column;
+        }
+        .left {
+            p {
+                flex-wrap: wrap;
+            }
+        }
+    }
+}

@@ -1,0 +1,60 @@
+.page2body {
+    @include flexBox();
+    .card {
+        transition: width 2s, height 2s, transform 2s;
+        &:hover {
+            width: 240px;
+        }
+        .iconbackground {
+            position: relative;
+            bottom: 20px;
+            .fa-solid {
+                background: rgb(0, 237, 0);
+                color: $green;
+                border-radius: 50%;
+                padding: 8px;
+                &:hover {
+                    background: lightgreen;
+                }
+            }
+        }
+        margin-left: 20px;
+        background-color: $blue;
+        text-align: center;
+        width: 200px;
+        border: 1px solid green;
+        border-style: hidden;
+        border-radius: 10%;
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 10%;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        button {
+            margin-top: 10px;
+            @extend %primary-button;
+        }
+    }
+}
+
+.page2header {
+    h3 {
+        @include flexBox();
+        font-family: "Grand Hotel";
+        color: $green;
+    }
+    h1 {
+        @include flexBox();
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .page2body {
+        flex-direction: column;
+        .card {
+            margin-top: 20px;
+        }
+    }
+}

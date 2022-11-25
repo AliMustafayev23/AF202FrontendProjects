@@ -1,0 +1,45 @@
+.contact {
+    background-color: $blue;
+    .contactus {
+        @include flexBox();
+        column-gap: 100px;
+        background-color: $blue;
+        .information {
+            margin-top: 40px;
+            i {
+                &:hover {
+                    color: green;
+                }
+            }
+        }
+        .form {
+            margin-top: 40px;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+            button {
+                @extend %primary-button;
+                width: 100%;
+                margin-top: 40px;
+            }
+            input {
+                background-color: $blue;
+                border-radius: 5px;
+                width: 300px;
+            }
+            #message {
+                height: 100px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .contact {
+        .contactus {
+            flex-direction: column;
+        }
+    }
+}

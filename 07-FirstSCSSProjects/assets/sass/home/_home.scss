@@ -1,0 +1,37 @@
+.home {
+    .banner {
+        margin-top: 30px;
+        @include flexBox();
+        .bannerleft {
+            width: 50%;
+            @include flexBox();
+            img {
+                width: 400px;
+                height: 300px;
+                border: 3px solid $green;
+                border-radius: 10%;
+            }
+        }
+        .bannerright {
+            width: 50%;
+            h3 {
+                font-family: "Grand Hotel";
+                color: $green;
+            }
+            p {
+                width: 400px;
+            }
+            button {
+                @extend %primary-button;
+            }
+        }
+    }
+    @media only screen and (max-width: 992px) {
+        .banner {
+            .bannerright {
+                margin-top: 20px;
+            }
+            flex-direction: column;
+        }
+    }
+}

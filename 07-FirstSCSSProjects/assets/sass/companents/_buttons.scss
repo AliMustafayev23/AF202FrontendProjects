@@ -1,0 +1,11 @@
+%primary-button {
+    color: white;
+    border-style: none;
+    background-color: $green;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    &:hover {
+        background-color: lightgreen;
+    }
+}
