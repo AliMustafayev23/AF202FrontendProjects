@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@300&family=Grand+Hotel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@300&family=Grand+Hotel&family=Kenia&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+button,
+h1 {
+    font-family: "Kenia";
+    font-size: 15px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.todoapp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Grand Hotel";
+    font-size: 60px;
+    padding-top: 20px;
+}
+
+.textarea {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerlist {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.add {
+    background-color: green;
+    border-radius: 10px;
+    border-style: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.add:hover {
+    background-color: lightgreen;
+}
+
+.container {
+    background-image: linear-gradient( 120deg, purple, rgb(181, 59, 181), rgb(245, 108, 245));
+    height: 100vh;
+    width: 100%;
+    color: white;
+}
+
+.deletall {
+    background-color: red;
+    border-radius: 10px;
+    border-style: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.delet {
+    background-color: red;
+    border-radius: 10px;
+    border-style: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.delet:hover {
+    background-color: rgb(252, 132, 132);
+}
+
+.deletall:hover {
+    background-color: rgb(252, 132, 132);
+}
+
+.edit {
+    background-color: blue;
+    border-radius: 10px;
+    border-style: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.edit:hover {
+    background-color: lightblue;
+}
+
+.buttonside {
+    padding-right: 5px;
+}
+
+.buttonside {
+    column-gap: 10px;
+}
+
+.headerlist {
+    background-color: grey;
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin-top: 40px;
+}
+
+.textarea {
+    background-color: white;
+    color: black;
+}
+
+.box,
+.box2 {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.header {
+    padding-top: 20px;
+}
+
+input {
+    border-style: none;
+    border-radius: 10px;
+    height: 35px;
+}
+
+.fa-solid {
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.list {
+    background-color: white;
+    color: black;
+}
