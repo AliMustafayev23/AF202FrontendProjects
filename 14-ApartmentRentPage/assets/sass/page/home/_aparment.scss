@@ -1,0 +1,54 @@
+#apartment {
+    h2 {
+        color: green;
+        margin-top: 10px;
+    }
+    .livingroom {
+        margin-top: 10px;
+        display: block;
+        p {
+            background-color: black;
+            padding: 10px;
+            display: inline;
+            color: white;
+            position: relative;
+            bottom: 30px;
+        }
+    }
+    .diningroom {
+        display: none;
+        margin-top: 10px;
+        p {
+            background-color: black;
+            padding: 10px;
+            display: inline;
+            color: white;
+            position: relative;
+            bottom: 30px;
+        }
+    }
+    .bedroom {
+        margin-top: 10px;
+        display: none;
+        p {
+            background-color: black;
+            padding: 10px;
+            display: inline;
+            color: white;
+            position: relative;
+            bottom: 30px;
+        }
+    }
+    .livingroom2 {
+        margin-top: 10px;
+        display: none;
+        p {
+            background-color: black;
+            padding: 10px;
+            display: inline;
+            color: white;
+            position: relative;
+            bottom: 30px;
+        }
+    }
+}

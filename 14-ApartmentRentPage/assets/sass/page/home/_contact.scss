@@ -1,0 +1,23 @@
+.contact {
+    form {
+        display: flex;
+        flex-direction: column;
+        input {
+            margin-top: 20px;
+            height: 30px;
+            width: 100%;
+        }
+        button {
+            width: 40%;
+            color: white;
+            background: green;
+            cursor: pointer;
+            border-style: none;
+            margin-top: 20px;
+            padding: 10px;
+        }
+        button:hover {
+            background-color: grey;
+        }
+    }
+}

@@ -1,0 +1,240 @@
+nav {
+  background-color: #f1f1f1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  height: 200vh;
+  overflow-y: scroll;
+  position: fixed;
+}
+nav h3 {
+  margin: 0px;
+}
+nav label {
+  margin-top: 20px;
+}
+nav #checkinlabel {
+  margin-top: 50px;
+}
+nav input {
+  margin-top: 20px;
+  height: 30px;
+}
+nav .section {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+nav .section a {
+  text-decoration: none;
+  color: black;
+  margin-top: 5px;
+}
+nav .section a:hover {
+  background-color: grey;
+}
+nav button {
+  color: white;
+  background: green;
+  cursor: pointer;
+  border-style: none;
+  margin-top: 20px;
+  padding: 10px;
+}
+nav button:hover {
+  background-color: grey;
+}
+
+@media only screen and (max-width: 992px) {
+  nav {
+    display: none;
+    z-index: 1;
+  }
+}
+#apartment h2 {
+  color: green;
+  margin-top: 10px;
+}
+#apartment .livingroom {
+  margin-top: 10px;
+  display: block;
+}
+#apartment .livingroom p {
+  background-color: black;
+  padding: 10px;
+  display: inline;
+  color: white;
+  position: relative;
+  bottom: 30px;
+}
+#apartment .diningroom {
+  display: none;
+  margin-top: 10px;
+}
+#apartment .diningroom p {
+  background-color: black;
+  padding: 10px;
+  display: inline;
+  color: white;
+  position: relative;
+  bottom: 30px;
+}
+#apartment .bedroom {
+  margin-top: 10px;
+  display: none;
+}
+#apartment .bedroom p {
+  background-color: black;
+  padding: 10px;
+  display: inline;
+  color: white;
+  position: relative;
+  bottom: 30px;
+}
+#apartment .livingroom2 {
+  margin-top: 10px;
+  display: none;
+}
+#apartment .livingroom2 p {
+  background-color: black;
+  padding: 10px;
+  display: inline;
+  color: white;
+  position: relative;
+  bottom: 30px;
+}
+
+.page {
+  padding-left: 20%;
+  padding-right: 20%;
+  width: 60%;
+}
+.page .pageright {
+  margin-left: 35%;
+}
+.page .pageright .imagemini {
+  margin-top: 10px;
+  display: flex;
+  column-gap: 1%;
+}
+.page .pageright .imagemini img {
+  width: 24%;
+  height: 24%;
+}
+.page .pageright .imagemini img:hover {
+  opacity: 0.6;
+}
+
+.third .space {
+  display: flex;
+  column-gap: 50px;
+}
+.third .space .spaceleft,
+.third .space .spaceright {
+  display: flex;
+  flex-direction: column;
+}
+.third .amenities {
+  column-gap: 50px;
+  display: flex;
+}
+.third .amenities .amenitiesleft,
+.third .amenities .amenitiesright {
+  display: flex;
+  flex-direction: column;
+}
+.third button {
+  color: white;
+  background: green;
+  cursor: pointer;
+  border-style: none;
+  margin-top: 20px;
+  padding: 10px;
+}
+.third button:hover {
+  background-color: grey;
+}
+
+@media only screen and (max-width: 992px) {
+  .space,
+.amenities {
+    flex-direction: column;
+  }
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+}
+.contact form input {
+  margin-top: 20px;
+  height: 30px;
+  width: 100%;
+}
+.contact form button {
+  width: 40%;
+  color: white;
+  background: green;
+  cursor: pointer;
+  border-style: none;
+  margin-top: 20px;
+  padding: 10px;
+}
+.contact form button:hover {
+  background-color: grey;
+}
+
+.modal {
+  background-color: rgb(212, 207, 207);
+  display: none;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 25%;
+  right: 0;
+  bottom: 50%;
+  padding: 20px;
+  width: 50%;
+}
+.modal button {
+  color: white;
+  background: green;
+  border-radius: 10px;
+  cursor: pointer;
+  border-style: none;
+  margin-top: 20px;
+  padding: 10px;
+}
+.modal button:hover {
+  background-color: grey;
+}
+.modal input {
+  width: 50%;
+  height: 30px;
+  border-radius: 10px;
+}
+.modal i {
+  color: black;
+  padding-left: 90%;
+}
+
+.rental {
+  display: flex;
+  width: 59%;
+  background-color: black;
+  color: white;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  display: none;
+}
+
+@media only screen and (max-width: 992px) {
+  .rental {
+    display: flex;
+  }
+  .rental .closemenu {
+    display: none;
+  }
+}/*# sourceMappingURL=main.css.map */

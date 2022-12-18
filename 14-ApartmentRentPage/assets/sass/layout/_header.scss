@@ -1,0 +1,54 @@
+nav {
+    background-color: #f1f1f1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    height: 200vh;
+    overflow-y: scroll;
+    position: fixed;
+    h3 {
+        margin: 0px;
+    }
+    label {
+        margin-top: 20px;
+    }
+    #checkinlabel {
+        margin-top: 50px;
+    }
+    input {
+        margin-top: 20px;
+        height: 30px;
+    }
+    .section {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        a {
+            text-decoration: none;
+            color: black;
+            margin-top: 5px;
+        }
+        a:hover {
+            background-color: grey;
+        }
+    }
+    button {
+        color: white;
+        background: green;
+        cursor: pointer;
+        border-style: none;
+        margin-top: 20px;
+        padding: 10px;
+    }
+    button:hover {
+        background-color: grey;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    nav {
+        display: none;
+        z-index: 1;
+    }
+}

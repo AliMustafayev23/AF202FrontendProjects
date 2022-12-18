@@ -1,0 +1,38 @@
+.third {
+    .space {
+        display: flex;
+        column-gap: 50px;
+        .spaceleft,
+        .spaceright {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .amenities {
+        column-gap: 50px;
+        display: flex;
+        .amenitiesleft,
+        .amenitiesright {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    button {
+        color: white;
+        background: green;
+        cursor: pointer;
+        border-style: none;
+        margin-top: 20px;
+        padding: 10px;
+    }
+    button:hover {
+        background-color: grey;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .space,
+    .amenities {
+        flex-direction: column;
+    }
+}

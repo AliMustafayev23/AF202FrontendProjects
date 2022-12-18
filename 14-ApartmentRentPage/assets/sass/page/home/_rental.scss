@@ -1,0 +1,19 @@
+.rental {
+    display: flex;
+    width: 59%;
+    background-color: black;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    display: none;
+}
+
+@media only screen and (max-width: 992px) {
+    .rental {
+        display: flex;
+        .closemenu {
+            display: none;
+        }
+    }
+}
